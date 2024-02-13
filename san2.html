@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo de San Valentín</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .card {
+            display: none;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        .card p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .card a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card1 p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .card1 a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card1 {
+            padding-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>¡Este es un pequeño detalle!</h1>
+    <div class="card1" id="card1">
+        <p>Esta es una invitacion para tener una cita el dia domingo de estas semana.<br><a href="#"
+                onclick="showCard(2)">Siguiente</a></p>
+    </div>
+    <div class="card" id="card2">
+        <p>Que prefiere comer <br> Pizza <br> o <br> Hambuerguesa?. <br><a href="#" onclick="showCard(3)">Siguiente</a>
+        </p>
+    </div>
+    <div class="card" id="card3">
+        <p>Ver el partido de Kru... digo <br> ver una pelicula <br> o <br>Mal viajados?. <br><a href="#"
+                onclick="showCard(4)">Siguiente</a></p>
+    </div>
+    <div class="card" id="card4">
+        <p>Video llamada antes de mimir <br> o <br> lo que quiera mi princesa?</p>
+    </div>
+    <script>
+        function showCard(cardNumber) {
+            document.getElementById('card' + (cardNumber - 1)).style.display = 'none';
+            document.getElementById('card' + cardNumber).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

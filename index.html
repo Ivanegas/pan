@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1>¿Quieres ser mi San Valentín?</h1>
+        <center><img src="https://i.pinimg.com/originals/1e/31/32/1e31323bae63dd3b0224b75bac7d58a5.gif" alt=""></center>
+        <button id="yesButton">Sí</button>
+        <button id="noButton">No</button>
+    </div>
+    <script>
+        const yesButton = document.getElementById('yesButton');
+        const noButton = document.getElementById('noButton');
+
+        noButton.addEventListener('click', () => {
+            noButton.style.display = 'none';
+        });
+
+        yesButton.addEventListener('click', () => {
+            window.location.href = 'san2.html';
+        });
+    </script>
+</body>
+
+</html>
